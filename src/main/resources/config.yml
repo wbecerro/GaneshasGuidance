@@ -35,7 +35,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: BREAK
             block: STONE
         craftachievement:
@@ -49,13 +49,13 @@ Tabs:
             x: 3
             y: 2
             description: "Test description"
-          parent: breakAchievement
+          parent: breakachievement
           maxProgression: 20
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: CRAFT
             item: STICK
         enchantachievement:
@@ -69,13 +69,13 @@ Tabs:
             x: 4
             y: 2
             description: "Test description"
-          parent: craftAchievement
+          parent: craftachievement
           maxProgression: 5
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: ENCHANT
             item: DIAMOND_SWORD
         joblevelachievement:
@@ -89,19 +89,19 @@ Tabs:
             x: 5
             y: 2
             description: "Test description"
-          parent: enchantAchievement
+          parent: enchantachievement
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: JOBLEVEL
             job: minero
             level: 4
         killachievement:
           display:
             material: ZOMBIE_SPAWN_EGG
-            name: "Job Level achievement"
+            name: "Kill achievement"
             # Solo puede ser TASK, GOAL O CHALLENGE
             frame: TASK
             toast: true
@@ -109,13 +109,13 @@ Tabs:
             x: 6
             y: 2
             description: "Test description"
-          parent: jobLevelAchievement
+          parent: joblevelachievement
           maxProgression: 5
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: KILL
             entity: ZOMBIE
         mcmmopowerlevelachievement:
@@ -129,18 +129,18 @@ Tabs:
             x: 7
             y: 2
             description: "Test description"
-          parent: killAchievement
+          parent: killachievement
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: MCMMOPOWERLEVEL
             level: 10
         mcmmoskillachievement:
           display:
             material: WHITE_BANNER
-            name: "mcMMO Power Level achievement"
+            name: "mcMMO Skill achievement"
             # Solo puede ser TASK, GOAL O CHALLENGE
             frame: TASK
             toast: true
@@ -148,19 +148,19 @@ Tabs:
             x: 8
             y: 2
             description: "Test description"
-          parent: mcmmoPowerLevelAchievement
+          parent: mcmmopowerlevelachievement
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: MCMMOSKILL
             skill: swords
             level: 10
         mmkillachievement:
           display:
             material: NETHERITE_SWORD
-            name: "Job Level achievement"
+            name: "MMKill achievement"
             # Solo puede ser TASK, GOAL O CHALLENGE
             frame: TASK
             toast: true
@@ -168,19 +168,19 @@ Tabs:
             x: 9
             y: 2
             description: "Test description"
-          parent: mcmmoSkillAchievement
+          parent: mcmmoskillachievement
           maxProgression: 2
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: MMKILL
             mob: SkeletonKing
         placeachievement:
           display:
             material: SCAFFOLDING
-            name: "Job Level achievement"
+            name: "Place achievement"
             # Solo puede ser TASK, GOAL O CHALLENGE
             frame: TASK
             toast: true
@@ -188,12 +188,71 @@ Tabs:
             x: 10
             y: 2
             description: "Test description"
-          parent: mmKillAchievement
+          parent: mmkillachievement
           maxProgression: 20
           rewards:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
             id: PLACE
             block: SCAFFOLDING
+        tradeachievement:
+          display:
+            material: EMERALD
+            name: "Trade achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 11
+            y: 2
+            description: "Test description"
+          parent: placeachievement
+          maxProgression: 2
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
+            id: TRADE
+        fishingrarityachievement:
+          display:
+            material: FISHING_ROD
+            name: "Fishing Rarity achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 12
+            y: 2
+            description: "Test description"
+          parent: tradeachievement
+          maxProgression: 2
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
+            id: FISHINGRARITY
+            rarity: mythic
+        woodcuttingrarityachievement:
+          display:
+            material: NETHERITE_AXE
+            name: "Woodcutting Rarity achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 13
+            y: 2
+            description: "Test description"
+          parent: fishingrarityachievement
+          maxProgression: 2
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY
+            id: WOODCUTTINGRARITY
+            rarity: mythic

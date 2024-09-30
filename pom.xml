@@ -6,7 +6,7 @@
 
     <groupId>wbe</groupId>
     <artifactId>GaneshasGuidance</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>GaneshasGuidance</name>
@@ -117,6 +117,18 @@
             <groupId>com.badbones69</groupId>
             <artifactId>CrazyCrates</artifactId>
             <version>3.4.9</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>wbe</groupId>
+            <artifactId>AcuaticLostWealth</artifactId>
+            <version>1.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>wbe</groupId>
+            <artifactId>YggdrasilsBark</artifactId>
+            <version>1.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

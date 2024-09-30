@@ -133,6 +133,12 @@ public class Config {
                 return new OpenCrateAchievement(key, display, parent, maxProgression, rewards, crate);
             case "TRADE":
                 return new TradeAchievement(key, display, parent, maxProgression, rewards);
+            case "FISHINGRARITY":
+                String rarity = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.rarity");
+                return new FishingRewardAchievement(key, display, parent, maxProgression, rewards, rarity);
+            case "WOODCUTTINGRARITY":
+                rarity = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.rarity");
+                return new WoodcuttingRewardAchievement(key, display, parent, maxProgression, rewards, rarity);
         }
 
         return null;
