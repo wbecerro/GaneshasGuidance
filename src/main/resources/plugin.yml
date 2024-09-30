@@ -1,0 +1,11 @@
+name: GaneshasGuidance
+version: 1.0
+main: wbe.ganeshasGuidance.GaneshasGuidance
+api-version: 1.21
+author: wbe
+depend: [UltimateAdvancementAPI, MythicMobs, mcMMO, Jobs, CrazyCrates]
+commands:
+  GaneshasGuidance:
+    description: GaneshasGuidance main command
+    aliases: [gg, ganeshasg, gguidance]
+    permission: ganeshasguidance.command

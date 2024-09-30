@@ -1,0 +1,199 @@
+Messages:
+  noPermission: "&b[&cWbeIndustries&b] &eNo tienes permiso para hacer esto."
+  reload: "&b[&cWbeIndustries&b] &eEl plugin se ha recargado con éxito."
+
+Tabs:
+  testtab:
+    achievements:
+      root:
+        display:
+          material: BEACON
+          name: "Root achievement"
+          # Solo puede ser TASK, GOAL O CHALLENGE
+          frame: CHALLENGE
+          toast: true
+          announce: true
+          x: 1
+          y: 2
+          description: "Test description"
+        background: "textures/block/pink_glazed_terracotta.png"
+      base:
+        breakachievement:
+          display:
+            material: NETHERITE_PICKAXE
+            name: "Break achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 2
+            y: 2
+            description: "Test description"
+          parent: root
+          maxProgression: 10
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: BREAK
+            block: STONE
+        craftachievement:
+          display:
+            material: CRAFTING_TABLE
+            name: "Craft achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 3
+            y: 2
+            description: "Test description"
+          parent: breakAchievement
+          maxProgression: 20
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: CRAFT
+            item: STICK
+        enchantachievement:
+          display:
+            material: ENCHANTING_TABLE
+            name: "Enchant achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 4
+            y: 2
+            description: "Test description"
+          parent: craftAchievement
+          maxProgression: 5
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: ENCHANT
+            item: DIAMOND_SWORD
+        joblevelachievement:
+          display:
+            material: DIAMOND_ORE
+            name: "Job Level achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 5
+            y: 2
+            description: "Test description"
+          parent: enchantAchievement
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: JOBLEVEL
+            job: minero
+            level: 4
+        killachievement:
+          display:
+            material: ZOMBIE_SPAWN_EGG
+            name: "Job Level achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 6
+            y: 2
+            description: "Test description"
+          parent: jobLevelAchievement
+          maxProgression: 5
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: KILL
+            entity: ZOMBIE
+        mcmmopowerlevelachievement:
+          display:
+            material: NETHER_STAR
+            name: "mcMMO Power Level achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 7
+            y: 2
+            description: "Test description"
+          parent: killAchievement
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: MCMMOPOWERLEVEL
+            level: 10
+        mcmmoskillachievement:
+          display:
+            material: WHITE_BANNER
+            name: "mcMMO Power Level achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 8
+            y: 2
+            description: "Test description"
+          parent: mcmmoPowerLevelAchievement
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: MCMMOSKILL
+            skill: swords
+            level: 10
+        mmkillachievement:
+          display:
+            material: NETHERITE_SWORD
+            name: "Job Level achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 9
+            y: 2
+            description: "Test description"
+          parent: mcmmoSkillAchievement
+          maxProgression: 2
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: MMKILL
+            mob: SkeletonKing
+        placeachievement:
+          display:
+            material: SCAFFOLDING
+            name: "Job Level achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 10
+            y: 2
+            description: "Test description"
+          parent: mmKillAchievement
+          maxProgression: 20
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE
+            id: PLACE
+            block: SCAFFOLDING
