@@ -3,7 +3,7 @@ version: 1.1
 main: wbe.ganeshasGuidance.GaneshasGuidance
 api-version: 1.21
 author: wbe
-depend: [UltimateAdvancementAPI, MythicMobs, mcMMO, Jobs, CrazyCrates]
+depend: [UltimateAdvancementAPI, MythicMobs, mcMMO, Jobs, CrazyCrates, AcuaticLostWealth, YggdrasilsBark, LaboursOfHercules]
 commands:
   GaneshasGuidance:
     description: GaneshasGuidance main command

@@ -139,6 +139,12 @@ public class Config {
             case "WOODCUTTINGRARITY":
                 rarity = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.rarity");
                 return new WoodcuttingRewardAchievement(key, display, parent, maxProgression, rewards, rarity);
+            case "LABOUR":
+                rarity = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.rarity");
+                return new CompleteLabourAchievement(key, display, parent, maxProgression, rewards, rarity);
+            case "CRYSTAL":
+                rarity = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.rarity");
+                return new UseCrystalAchievement(key, display, parent, maxProgression, rewards, rarity);
         }
 
         return null;
