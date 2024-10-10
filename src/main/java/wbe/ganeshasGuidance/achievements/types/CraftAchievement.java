@@ -7,10 +7,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.*;
 import org.bukkit.inventory.ItemStack;
 import wbe.ganeshasGuidance.achievements.BaseAchievement;
+import wbe.ganeshasGuidance.util.Utilities;
 
 import java.util.List;
 
 public class CraftAchievement extends BaseAchievement {
+
+    private Utilities utilities = new Utilities();
 
     public CraftAchievement(String key, AdvancementDisplay display, Advancement parent, int maxProgression,
                             List<String> rewards, Material item) {
@@ -31,7 +34,7 @@ public class CraftAchievement extends BaseAchievement {
                 return;
             }
 
-            int amount = event.getInventory().getResult().getAmount();
+            int amount = utilities.getCraftedAmount(event);
             incrementProgression(player, amount);
         });
     }
