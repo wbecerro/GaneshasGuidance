@@ -145,6 +145,8 @@ public class Config {
             case "CRYSTAL":
                 rarity = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.rarity");
                 return new UseCrystalAchievement(key, display, parent, maxProgression, rewards, rarity);
+            case "GEM":
+                return new ReceiveGemAchievement(key, display, parent, maxProgression, rewards);
         }
 
         return null;

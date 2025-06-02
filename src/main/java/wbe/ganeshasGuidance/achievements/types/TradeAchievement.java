@@ -3,10 +3,7 @@ package wbe.ganeshasGuidance.achievements.types;
 import com.fren_gor.ultimateAdvancementAPI.advancement.Advancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementDisplay;
 import org.bukkit.Statistic;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
-import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.player.PlayerStatisticIncrementEvent;
 import wbe.ganeshasGuidance.achievements.BaseAchievement;
 

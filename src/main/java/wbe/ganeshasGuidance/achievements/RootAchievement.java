@@ -3,7 +3,6 @@ package wbe.ganeshasGuidance.achievements;
 import com.fren_gor.ultimateAdvancementAPI.AdvancementTab;
 import com.fren_gor.ultimateAdvancementAPI.advancement.RootAdvancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementDisplay;
-import org.bukkit.Bukkit;
 
 public class RootAchievement {
 

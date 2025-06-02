@@ -35,7 +35,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: BREAK
             block: STONE
         craftachievement:
@@ -55,7 +55,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: CRAFT
             item: STICK
         enchantachievement:
@@ -75,7 +75,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: ENCHANT
             item: DIAMOND_SWORD
         joblevelachievement:
@@ -94,7 +94,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: JOBLEVEL
             job: minero
             level: 4
@@ -115,7 +115,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: KILL
             entity: ZOMBIE
         mcmmopowerlevelachievement:
@@ -134,7 +134,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: MCMMOPOWERLEVEL
             level: 10
         mcmmoskillachievement:
@@ -153,7 +153,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: MCMMOSKILL
             skill: swords
             level: 10
@@ -174,7 +174,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: MMKILL
             mob: SkeletonKing
         placeachievement:
@@ -194,7 +194,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: PLACE
             block: SCAFFOLDING
         tradeachievement:
@@ -214,7 +214,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: TRADE
         fishingrarityachievement:
           display:
@@ -233,7 +233,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: FISHINGRARITY
             rarity: mythic
         woodcuttingrarityachievement:
@@ -253,7 +253,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: WOODCUTTINGRARITY
             rarity: mythic
         completelabourachievement:
@@ -273,7 +273,7 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: LABOUR
             rarity: common
         crystaluseachievement:
@@ -293,6 +293,25 @@ Tabs:
             - "give %player% diamond 2"
             - "msg %player% test"
           type:
-            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
             id: CRYSTAL
             rarity: common
+        gemachievement:
+          display:
+            material: AMETHYST_SHARD
+            name: "Gem achievement"
+            # Solo puede ser TASK, GOAL O CHALLENGE
+            frame: TASK
+            toast: true
+            announce: true
+            x: 16
+            y: 2
+            description: "Test description"
+          parent: crystaluseachievement
+          maxProgression: 2
+          rewards:
+            - "give %player% diamond 2"
+            - "msg %player% test"
+          type:
+            # Solo puede ser BREAK, CRAFT, ENCHANT, JOBLEVEL, KILL, MCMMOPOWERLEVEL, MCMMOSKILL, MMKILL, PLACE, CRATE, TRADE, FISHINGRARITY, WOODCUTTINGRARITY, LABOUR, CRYSTAL, GEM
+            id: GEM
