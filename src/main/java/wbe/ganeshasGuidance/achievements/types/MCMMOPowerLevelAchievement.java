@@ -5,6 +5,7 @@ import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementDispla
 import com.gmail.nossr50.datatypes.player.McMMOPlayer;
 import com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent;
 import com.gmail.nossr50.util.player.UserManager;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import wbe.ganeshasGuidance.achievements.BaseAchievement;
 
@@ -14,6 +15,10 @@ public class MCMMOPowerLevelAchievement extends BaseAchievement {
     public MCMMOPowerLevelAchievement(String key, AdvancementDisplay display, Advancement parent, List<String> rewards,
                                       int level) {
         super(key, display, parent, 1, rewards);
+
+        if(Bukkit.getPluginManager().getPlugin("mcMMO") == null) {
+            return;
+        }
 
         registerEvent(McMMOPlayerLevelUpEvent.class, event -> {
             Player player = event.getPlayer();

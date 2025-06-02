@@ -56,6 +56,10 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
@@ -64,21 +68,12 @@
             <url>https://nexus.frengor.com/repository/public/</url>
         </repository>
         <repository>
+            <id>mcmmo-repo</id>
+            <url>https://nexus.neetgames.com/repository/maven-public</url>
+        </repository>
+        <repository>
             <id>nexus</id>
-            <name>Lumine Releases</name>
             <url>https://mvn.lumine.io/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>lumine-snapshot</id>
-            <url>http://mvn.lumine.io/repository/maven-snapshots/</url>
-        </repository>
-        <repository>
-            <id>neetgames</id>
-            <url>https://nexus.neetgames.com/repository/maven-releases/</url>
-        </repository>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
@@ -86,7 +81,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.21-R0.1-SNAPSHOT</version>
+            <version>1.21.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -96,27 +91,41 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.lumine</groupId>
-            <artifactId>Mythic-Dist</artifactId>
-            <version>5.7.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.gmail.nossr50.mcMMO</groupId>
             <artifactId>mcMMO</artifactId>
             <version>2.2.021</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sk89q.worldguard</groupId>
+                    <artifactId>worldguard-legacy</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sk89q.worldedit</groupId>
+                    <artifactId>worldedit-bukkit</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sk89q.worldedit</groupId>
+                    <artifactId>worldedit-libs</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.lumine</groupId>
+            <artifactId>Mythic-Dist</artifactId>
+            <version>5.8.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.Zrips</groupId>
             <artifactId>Jobs</artifactId>
-            <version>LATEST</version>
+            <version>v5.2.2.3</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.badbones69</groupId>
             <artifactId>CrazyCrates</artifactId>
-            <version>3.4.9</version>
+            <version>4.10.4</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -134,6 +143,12 @@
         <dependency>
             <groupId>wbe</groupId>
             <artifactId>LaboursOfHercules</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>wbe</groupId>
+            <artifactId>TartarusRiches</artifactId>
             <version>1.0</version>
             <scope>provided</scope>
         </dependency>

@@ -4,6 +4,7 @@ import com.fren_gor.ultimateAdvancementAPI.advancement.Advancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementDisplay;
 import io.lumine.mythic.api.mobs.MythicMob;
 import io.lumine.mythic.bukkit.events.MythicMobDeathEvent;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import wbe.ganeshasGuidance.achievements.BaseAchievement;
@@ -14,6 +15,10 @@ public class MMKillAchievement extends BaseAchievement {
     public MMKillAchievement(String key, AdvancementDisplay display, Advancement parent, int maxProgression,
                              List<String> rewards, String mob) {
         super(key, display, parent, maxProgression, rewards);
+
+        if(Bukkit.getPluginManager().getPlugin("MythicMobs") == null) {
+            return;
+        }
 
         registerEvent(MythicMobDeathEvent.class, event -> {
             LivingEntity killer = event.getKiller();

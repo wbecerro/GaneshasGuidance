@@ -2,6 +2,7 @@ package wbe.ganeshasGuidance.achievements.types;
 
 import com.fren_gor.ultimateAdvancementAPI.advancement.Advancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementDisplay;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import wbe.ganeshasGuidance.achievements.BaseAchievement;
 import wbe.laboursOfHercules.events.CrystalUseEvent;
@@ -12,6 +13,10 @@ public class UseCrystalAchievement extends BaseAchievement {
     public UseCrystalAchievement(String key, AdvancementDisplay display, Advancement parent, int maxProgression,
                                  List<String> rewards, String rarity) {
         super(key, display, parent, maxProgression, rewards);
+
+        if(Bukkit.getPluginManager().getPlugin("LaboursOfHercules") == null) {
+            return;
+        }
 
         registerEvent(CrystalUseEvent.class, event -> {
             Player player = event.getPlayer();
