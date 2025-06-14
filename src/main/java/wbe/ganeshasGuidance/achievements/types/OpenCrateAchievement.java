@@ -24,7 +24,7 @@ public class OpenCrateAchievement extends BaseAchievement {
                 return;
             }
 
-            if(event.getCrate().getCrateName().equalsIgnoreCase(crate)) {
+            if(event.getCrate().getFileName().equalsIgnoreCase(crate)) {
                 incrementProgression(player);
             }
         });
