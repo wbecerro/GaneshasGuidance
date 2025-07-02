@@ -147,6 +147,10 @@ public class Config {
                 return new UseCrystalAchievement(key, display, parent, maxProgression, rewards, rarity);
             case "GEM":
                 return new ReceiveGemAchievement(key, display, parent, maxProgression, rewards);
+            case "TALISMAN":
+                return new TalismanCountAchievement(key, display, parent, maxProgression, rewards);
+            case "PET":
+                return new PetCountAchievement(key, display, parent, maxProgression, rewards);
         }
 
         return null;
