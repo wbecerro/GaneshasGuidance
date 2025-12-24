@@ -151,6 +151,9 @@ public class Config {
                 return new TalismanCountAchievement(key, display, parent, maxProgression, rewards);
             case "PET":
                 return new PetCountAchievement(key, display, parent, maxProgression, rewards);
+            case "PRESTIGE":
+                skill = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.skill");
+                return new PrestigeLevelAchievement(key, display, parent, rewards, skill, maxProgression);
         }
 
         return null;
