@@ -154,6 +154,10 @@ public class Config {
             case "PRESTIGE":
                 skill = config.getString("Tabs." + tab + ".achievements.base." + key + ".type.skill");
                 return new PrestigeLevelAchievement(key, display, parent, rewards, skill, maxProgression);
+            case "FOOD":
+                return new ReceiveFoodAchievement(key, display, parent, maxProgression, rewards);
+            case "RUNE":
+                return new ReceiveRuneAchievement(key, display, parent, maxProgression, rewards);
         }
 
         return null;
